@@ -100,7 +100,7 @@ namespace ArrayPractice
                 && (fpos.Y >= label1.Top)
                 && (fpos.Y < label1.Bottom))
             {
-                timer1.Enabled = false;
+                label1.Visible = false;
             }
 
             if ((fpos.X >= label2.Left)
@@ -108,7 +108,7 @@ namespace ArrayPractice
                 && (fpos.Y >= label2.Top)
                 && (fpos.Y < label2.Bottom))
             {
-                timer1.Enabled = false;
+                label2.Visible = false;
             }
 
             if ((fpos.X >= label3.Left)
@@ -116,7 +116,7 @@ namespace ArrayPractice
                 && (fpos.Y >= label3.Top)
                 && (fpos.Y < label3.Bottom))
             {
-                timer1.Enabled = false;
+                label3.Visible = false;
             }
         }
     }
