@@ -118,6 +118,13 @@ namespace ArrayPractice
             {
                 label3.Visible = false;
             }
+
+            if (    (label1.Visible == false)
+                &&  (label2.Visible == false)
+                &&  (label3.Visible == false))
+            {
+                timer1.Enabled = false;
+            }
         }
     }
 }
