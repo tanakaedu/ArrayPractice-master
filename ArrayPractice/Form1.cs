@@ -59,6 +59,40 @@ namespace ArrayPractice
                 vy = -Math.Abs(vy);
             }
 
+            if (label2.Left < 0)
+            {
+                vx2 = Math.Abs(vx2);
+            }
+            if (label2.Top < 0)
+            {
+                vy2 = Math.Abs(vy2);
+            }
+            if (label2.Right > ClientSize.Width)
+            {
+                vx2 = -Math.Abs(vx2);
+            }
+            if (label2.Bottom > ClientSize.Height)
+            {
+                vy2 = -Math.Abs(vy2);
+            }
+
+            if (label3.Left < 0)
+            {
+                vx3 = Math.Abs(vx3);
+            }
+            if (label3.Top < 0)
+            {
+                vy3 = Math.Abs(vy3);
+            }
+            if (label3.Right > ClientSize.Width)
+            {
+                vx3 = -Math.Abs(vx3);
+            }
+            if (label3.Bottom > ClientSize.Height)
+            {
+                vy3 = -Math.Abs(vy3);
+            }
+
             Point fpos = PointToClient(MousePosition);
 
             if ((fpos.X >= label1.Left)
